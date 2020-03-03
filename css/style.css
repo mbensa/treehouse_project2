@@ -1,9 +1,10 @@
+/* common rules */
 html {
   font: normal 62.5% Roboto, sans-serif;
 }
 
 body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   line-height: 1.5;
 }
 
@@ -14,18 +15,18 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-family: Nunito, sans-serif;
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: normal;
   font-family: Nunito, sans-serif;
 }
@@ -34,10 +35,14 @@ img {
   max-width: 100%;
 }
 
+.section-header {
+  padding: 30px 0;
+}
+/* ---------- */
+
 header {
   text-align: center;
-  margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 0 10px 30px;
 }
 
 nav ul li {
@@ -50,7 +55,7 @@ nav ul li {
 }
 
 .profile-image {
-  padding: 20px 25px 15px;
+  padding: 30px 25px;
 }
 
 header p {
@@ -64,10 +69,6 @@ header p {
   text-align: center;
 }
 
-.portfolio-header {
-  padding: 30px 0;
-}
-
 .portfolio-section {
   margin-bottom: 30px;
 }
@@ -77,14 +78,14 @@ header p {
 }
 
 .portfolio-section > h3 {
-  padding: 20px 0 10px;
+  padding: 30px 0 20px;
 }
 
 .skills {
   background-color: white;
   margin-top: 20px;
-  padding: 20px 0;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .skills-icon {
@@ -94,11 +95,7 @@ header p {
 .contact {
   text-align: center;
   margin: 0 10px;
-  border-bottom: 2px solid #E7E7E7;
-}
-
-.contact-header {
-  padding: 30px 0 20px;
+  border-bottom: 2px solid #e7e7e7;
 }
 
 .address {
@@ -119,10 +116,36 @@ header p {
 }
 
 .footer > a {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
+.address-value {
+  font-weight: bold;
+  padding-left: 5px;
+}
 
+@media (min-width: 768px) {
+  nav ul li {
+    margin-bottom: 0;
+    background-color: #fafafa;
+    display: inline-block;
+    padding-right: 30px;
+  }
 
+  nav ul li:last-child {
+    padding-right: 0;
+  }
+
+  .intro-container {
+    display: flex;
+  }
+
+  .intro-container p {
+    flex: 1 0 60%;
+  }
+
+  .intro-container img {
+    flex: 1 1 auto;
+  }
+}
