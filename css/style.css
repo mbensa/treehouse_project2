@@ -55,7 +55,7 @@ nav ul li {
 }
 
 .profile-image {
-  padding: 30px 25px;
+  padding: 30px 0;
 }
 
 header p {
@@ -70,11 +70,7 @@ header p {
 }
 
 .portfolio-section {
-  margin-bottom: 30px;
-}
-
-.portfolio-section:last-child {
-  margin-bottom: 0;
+  padding-bottom: 40px;
 }
 
 .portfolio-section > h3 {
@@ -85,7 +81,7 @@ header p {
   background-color: white;
   margin-top: 20px;
   text-align: center;
-  padding-bottom: 30px;
+  padding: 0 10px 30px;
 }
 
 .skills-icon {
@@ -94,8 +90,9 @@ header p {
 
 .contact {
   text-align: center;
-  margin: 0 10px;
+  padding: 0 0 30px;
   border-bottom: 2px solid #e7e7e7;
+  margin: 0 10px;
 }
 
 .address {
@@ -109,7 +106,7 @@ header p {
 }
 
 .footer {
-  margin: 15px 10px;
+  padding: 15px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,6 +122,10 @@ header p {
   padding-left: 5px;
 }
 
+.footer-link {
+  display: none;
+}
+
 @media (min-width: 768px) {
   nav ul li {
     margin-bottom: 0;
@@ -137,15 +138,90 @@ header p {
     padding-right: 0;
   }
 
-  .intro-container {
+  .profile-container {
     display: flex;
   }
 
-  .intro-container p {
-    flex: 1 0 60%;
+  .profile-text {
+    order: -1;
+    align-self: flex-start;
+    padding-top: 30px;
+    font-size: 1.8rem;
+    text-align: left;
   }
 
-  .intro-container img {
-    flex: 1 1 auto;
+  .portfolio-sections {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-section {
+    flex: 1 50%;
+    padding: 0 15px 45px;
+  }
+
+  .portfolio-section > p {
+    padding: 0 45px;
+  }
+
+  .skills-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact > p {
+    padding: 0 100px;
+  }
+
+  .footer-mobile-link {
+    display: none;
+  }
+
+  .footer-link {
+    display: block;
+    padding-right: 30px;
+  }
+
+  .footer-link:last-child {
+    padding-right: 0;
+  }
+
+  .footer > h2 {
+    margin-right: auto;
+  }
+
+  .profile-image {
+    padding: 30px 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio-section {
+    flex: 1 calc(100% / 3);
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  h1 {
+    margin-right: auto;
+  }
+
+  header,
+  .portfolio,
+  .skills,
+  .contact {
+    padding: 0 50px 30px;
+  }
+
+  .contact {
+    margin: 0 50px;
+    padding: 0 0 30px;
+  }
+
+  .footer {
+    padding: 10px 50px;
   }
 }
