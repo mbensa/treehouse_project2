@@ -1,4 +1,6 @@
-/* common rules */
+/* ====================
+common rules
+=====================*/
 html {
   font: normal 62.5% Roboto, sans-serif;
 }
@@ -38,7 +40,7 @@ img {
 .section-header {
   padding: 30px 0;
 }
-/* ---------- */
+/*=========================*/
 
 header {
   text-align: center;
@@ -81,7 +83,7 @@ header p {
   background-color: white;
   margin-top: 20px;
   text-align: center;
-  padding: 0 10px 30px;
+  padding: 0 30px 30px;
 }
 
 .skills-icon {
@@ -92,7 +94,7 @@ header p {
   text-align: center;
   padding: 0 0 30px;
   border-bottom: 2px solid #e7e7e7;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .address {
@@ -106,7 +108,7 @@ header p {
 }
 
 .footer {
-  padding: 15px 10px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,6 +129,10 @@ header p {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 0 30px;
+  }
+
   nav ul li {
     margin-bottom: 0;
     background-color: #fafafa;
@@ -145,9 +151,13 @@ header p {
   .profile-text {
     order: -1;
     align-self: flex-start;
-    padding-top: 30px;
+    padding: 30px 30px 0 0;
     font-size: 1.8rem;
     text-align: left;
+  }
+
+  .portfolio {
+    padding: 0 15px;
   }
 
   .portfolio-sections {
@@ -192,33 +202,48 @@ header p {
   }
 
   .profile-image {
-    padding: 30px 15px;
+    padding: 30px 0;
   }
 }
 
 @media (min-width: 1024px) {
+  .portfolio {
+    margin: 0 20px;
+  }
+
   .portfolio-section {
     flex: 1 calc(100% / 3);
   }
 
   .header-nav {
     display: flex;
+    padding: 30px 0;
   }
 
   h1 {
     margin-right: auto;
   }
 
+  .portfolio {
+    padding: 0 15px 30px;
+  }
+
   header,
-  .portfolio,
-  .skills,
   .contact {
     padding: 0 50px 30px;
+  }
+
+  .skills {
+    margin: 20px 20px 0;
   }
 
   .contact {
     margin: 0 50px;
     padding: 0 0 30px;
+  }
+
+  .contact > p {
+    padding: 0 200px;
   }
 
   .footer {
