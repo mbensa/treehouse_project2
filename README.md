@@ -4,5 +4,5 @@ This project is a simple static website and is a part of the Treehouse Techdegre
 
 ## How to run it?
 
-*clone or download this repository
-*simply open index.html in your preferred browser
+- clone or download this repository
+- simply open index.html in your preferred browser
