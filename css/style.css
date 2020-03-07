@@ -180,8 +180,11 @@ header p {
 
   .skills-img {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .skills-icon {
+    max-width: 25%;
   }
 
   .contact > p {
